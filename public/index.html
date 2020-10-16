@@ -11,15 +11,24 @@
     
     <form id="create">
         <p>Add Your Score</p>
-        <label>Name: <input id="user-name"></input></label>
+        <label>Name: <input id="input-name"></input></label>
         <label>Date: <input id="date"></input></label>
         <label>Today's Score: <input id="squat-num"></input></label>
-        <button type="submit">Submit</button>
+        <button id="submit">Submit</button>
     </form>
     
     <form id="search">
         <p>Track Your Score</p>
-        <label>Name: <input id="user-name"></input></label>
+        <label>Name: 
+            <select id="user-name" name="user-name">
+                <option selected="selected">User</option>
+                <option value="hajoo">Hajoo</option>
+                <option value="mahdi">Mahdi</option>
+                <option value="kate">Kate</option>
+                <option value="jeremy">Jeremy</option>
+                <option value="george">George</option>
+              </select>
+        </label>
         <button id="get-score">Track my Score!</button>
         <section id="score"></section>
     </form>
